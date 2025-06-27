@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🧠 Mini RAG App
 
 A minimal Retrieval-Augmented Generation (RAG) application using Python. This project shows how to combine document retrieval with a language model to answer questions using your own data
