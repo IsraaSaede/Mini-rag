@@ -1,0 +1,17 @@
+services:
+  mangodb:
+    image: mongo:7-jammy
+    container_name: mangodb
+    ports:
+      - "27007:27017"         # use default MongoDB port
+    volumes:
+      - mongo_data:/data/db   # use named volume instead of ./mangodb
+    networks:
+      - backend
+    restart: always
+
+networks:
+  backend: {}
+
+volumes:
+  mongo_data:
